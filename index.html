@@ -15,15 +15,37 @@
     <nav>
       <div class="navigation container">
         <div class="logo_container">
-          <img src="./images/noto_pot-of-food.svg" alt="" />
+          <img src="./images/noto_pot-of-food.svg" alt="Logo" />
+        </div>
+        <!-- Navigation Links -->
+        <div class="nav_links">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Social Icons in Navbar -->
+        <div class="social_icons_nav">
+          <a href="https://twitter.com" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://github.com" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
         <div class="bar_icon">
-          <img src="./images/codicon_three-bars.svg" alt="" />
+          <img src="./images/codicon_three-bars.svg" alt="Menu" />
         </div>
       </div>
     </nav>
+
     <!-- Hero Section -->
-    <div class="container">
+    <div class="container" id="hero">
       <div class="hero">
         <div class="hero_image">
           <img src="./images/Hero Image.png" alt="Hero Image" />
@@ -39,7 +61,9 @@
         </div>
       </div>
     </div>
-    <section class="features">
+
+    <!-- Features Section -->
+    <section class="features" id="features">
       <div class="feature">
         <img
           src="./images/icons8-summer-sales-48 1.png"
@@ -71,8 +95,11 @@
         </div>
       </div>
     </section>
+
     <div class="devider"></div>
-    <div class="menu">
+
+    <!-- Menu Section -->
+    <div class="menu" id="menu">
       <div class="tag">Our Menu</div>
       <h2>Explore Our Menu</h2>
       <div class="grid">
@@ -98,8 +125,11 @@
           />
         </div>
         <div class="item4">
-          <img class="gird-image" src="./images/unsplash_JCbsOIhr5BY.png""
-          alt="" />
+          <img
+            class="gird-image"
+            src="./images/unsplash_JCbsOIhr5BY.png"
+            alt=""
+          />
         </div>
         <div class="item5">
           <img
@@ -124,47 +154,61 @@
         </div>
       </div>
     </div>
-    <footer>
+
+    <!-- Footer Section -->
+    <footer id="contact">
       <div class="footer_container container">
-        <div class="footer_logo">
-          <img src="./images/noto_pot-of-food.svg" alt="" />
-        </div>
-        <div class="link_lists">
-          <h3>Main Links</h3>
-          <ul>
-            <li>Order Tracking</li>
-            <li>New Order</li>
-            <li>Contact Us</li>
-            <li>News & Blogs</li>
-          </ul>
-        </div>
-        <div class="link_lists">
-          <h3>Support</h3>
-          <ul>
-            <li>About Us</li>
-            <li>Privacy Policy</li>
-            <li>Terms & Conditions</li>
-          </ul>
-        </div>
-        <div class="newslatter">
-          <h3>Join Our Newsletter</h3>
-          <input type="email" placeholder="Enter you email..." />
-          <h3>Follow Us</h3>
-          <div class="social_icons">
-            <div class="bar_icons">
-              <i class="fa fa-facebook"></i>
+        <!-- Footer Top: Logo and Links -->
+        <div class="footer_top">
+          <div class="footer_logo">
+            <img src="./images/noto_pot-of-food.svg" alt="Footer Logo" />
+          </div>
+          <div class="footer_links">
+            <div class="link_lists">
+              <h3>Main Links</h3>
+              <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+              </ul>
             </div>
-            <div class="bar_icons">
-              <i class="fa-brands fa-twitter"></i>
+            <div class="link_lists">
+              <h3>Support</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+              </ul>
             </div>
-            <div class="bar_icons">
-              <i class="fa-brands fa-instagram"></i>
-            </div>
-            <div class="bar_icons">
-              <i class="fa-brands fa-youtube"></i>
-            </div>
+          </div>
         </div>
+        <!-- Footer Bottom: Newsletter & Social -->
+        <div class="footer_bottom">
+          <div class="newslatter">
+            <h3>Join Our Newsletter</h3>
+            <input type="email" placeholder="Enter your email..." />
+          </div>
+          <div class="social_footer">
+            <h3>Follow Us</h3>
+            <div class="social_icons">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">&copy; 2025 Restaurant. All rights reserved.</p>
       </div>
     </footer>
+
+    <!-- JavaScript for Navbar Toggle -->
+    <script>
+      const barIcon = document.querySelector(".bar_icon");
+      const navLinks = document.querySelector(".nav_links");
+      barIcon.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
