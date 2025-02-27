@@ -13,5 +13,5 @@ The Website is Live now: https://suraj-kumar00.github.io/Restaurant_Website
 Install the `Docker Desktop` to pull and run the below image locally
 
 ```bash
-docker pull surajkumar00/restaurantwebsite:v1
+docker pull surajkumar00/restaurantwebsite:v2
 ```
